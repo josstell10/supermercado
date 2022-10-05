@@ -94,7 +94,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .titulo h2,
 .productos .titulo-pro,
-.servicios .titulo-ser{
+.servicios .titulo-ser,
+.nosotros .titulo-nos,
+.contacto .titulo-con{
     font-size: 50px;
     color: red;
     font-weight: bold;
@@ -104,7 +106,9 @@ h1,h2,h3,h4,h5,h6{
 }
 /* sesion productos */
 .productos,
-.servicios{
+.servicios,
+.nosotros,
+.contacto{
     width: 100%;
     height: auto;
     display: flex;
@@ -112,7 +116,9 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
 }
 .con-productos,
-.con-servicios{
+.con-servicios,
+.con-nosotros,
+.con-contacto{
     width: 80%;
     height: auto;
     display: flex;
@@ -180,13 +186,17 @@ h1,h2,h3,h4,h5,h6{
     height: auto;
  }
 .servicio-1 .con-texto h3,
-.servicio-2 .con-texto h3{
+.servicio-2 .con-texto h3,
+.con-nosotros .con-texto h3,
+.con-contacto .con-texto h3{
     font-size: 45px;
     color: red;
     font-weight: bold;
 }
 .servicio-1 .con-texto p,
-.servicio-2 .con-texto p{
+.servicio-2 .con-texto p,
+.con-nosotros .con-texto p,
+.con-contacto .con-texto p{
     font-size: 20px;
     color: gray;
     font-weight: bold;
@@ -206,4 +216,59 @@ h1,h2,h3,h4,h5,h6{
     color: red;
     background-color: white;
     border: 2px solid red;
+}
+/* nosotros */
+.con-nosotros,
+.con-contacto{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.con-nosotros iframe,
+.con-nosotros .con-texto{
+    width: 35%;
+}
+/* Contacto */
+.con-contacto img,
+.con-contacto .con-texto{
+    width: 38%;
+}
+.con-contacto .con-texto form{
+    display: flex;
+    flex-direction: column;
+}
+.con-contacto .con-texto form input,
+.con-contacto .con-texto form textarea,
+.con-contacto .con-texto form button{
+    margin: 5px 0;
+}
+.con-contacto .con-texto form input{
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.con-contacto .con-texto form textarea,
+.con-contacto .con-texto form button{
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+.con-contacto .con-texto form button{
+    background-color: red;
+    color: white;
+}
+
+/* sesion pie */
+.pie{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pie p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
